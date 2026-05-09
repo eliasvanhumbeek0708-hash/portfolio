@@ -1,0 +1,336 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    background: #000;
+    border-bottom: 2px solid #f277c5;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #f277c5;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-link:hover .logo {
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #f277c5;
+}
+
+.hero {
+    background: linear-gradient(135deg, #111, #000);
+    padding: 45px;
+    border-radius: 15px;
+    border: 1px solid #f277c5;
+    box-shadow: 0 0 20px rgba(242, 119, 197, 0.25);
+}
+
+.hero h2 {
+    color: #f277c5;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+
+.section-title {
+    color: #f277c5;
+    margin-bottom: 25px;
+}
+
+.btn-pink {
+    background: #f277c5;
+    color: #000;
+    border: none;
+    padding: 11px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-pink:hover {
+    background: #fff;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.custom-card {
+    background: #111;
+    border: 1px solid #f277c5;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.custom-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px #f277c5;
+}
+
+.custom-card img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.custom-card .card-body {
+    padding: 22px;
+}
+
+.sidebar-box {
+    background: #111;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #f277c5;
+    margin-bottom: 25px;
+}
+
+.sidebar-box h4 {
+    color: #f277c5;
+    margin-bottom: 15px;
+}
+
+.sidebar-box ul {
+    list-style: none;
+}
+
+.project-content {
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #f277c5;
+}
+
+.project-content h3 {
+    color: #f277c5;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.project-content ul {
+    padding-left: 20px;
+}
+
+.project-content li {
+    margin-bottom: 8px;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #111;
+    border: 1px solid #f277c5;
+    color: #fff;
+    padding: 12px;
+}
+
+.contact-form textarea {
+    min-height: 160px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: #111;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 10px #f277c5;
+}
+
+.footer {
+    background: #000;
+    border-top: 1px solid #f277c5;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    /* PROJECT LAYOUT 1: Klassiek met sidebar */
+.project-layout-classic .project-content {
+    border-left: 5px solid #f277c5;
+}
+
+/* PROJECT LAYOUT 2: Grote banner */
+.project-banner {
+    min-height: 360px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    border: 1px solid #f277c5;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+}
+
+.project-banner-content {
+    width: 100%;
+    padding: 35px;
+    background: linear-gradient(transparent, #000);
+}
+
+.project-banner-content h2 {
+    color: #f277c5;
+    font-size: 2.7rem;
+}
+
+/* PROJECT LAYOUT 3: Twee kolommen */
+.project-split {
+    background: #111;
+    border: 1px solid #f277c5;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.project-split-text {
+    padding: 35px;
+}
+
+.project-split-text h2 {
+    color: #f277c5;
+}
+
+.project-split img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* PROJECT LAYOUT 4: Centered card */
+.project-centered {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.project-centered img {
+    border-radius: 18px;
+    border: 1px solid #f277c5;
+    margin-bottom: 30px;
+}
+
+/* PROJECT LAYOUT 5: Dashboard blokken */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.dashboard-box {
+    background: #111;
+    border: 1px solid #f277c5;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.dashboard-box h4 {
+    color: #f277c5;
+}
+
+/* PROJECT LAYOUT 6: Timeline */
+.timeline {
+    border-left: 3px solid #f277c5;
+    padding-left: 25px;
+}
+
+.timeline-item {
+    background: #111;
+    border: 1px solid #f277c5;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline-item h4 {
+    color: #f277c5;
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-banner-content h2 {
+        font-size: 2rem;
+    }
+}
+
+/* LEAFLET MAP */
+
+#map {
+    height: 400px;
+    width: 100%;
+    min-height: 400px;
+    border-radius: 15px;
+    border: 2px solid #f277c5;
+    background: #111;
+}
+
+/* BELANGRIJK: fix voor Leaflet + reset.css */
+.leaflet-container img {
+    max-width: none !important;
+}
+
+.leaflet-container {
+    font-family: Arial, sans-serif;
+}
+}
