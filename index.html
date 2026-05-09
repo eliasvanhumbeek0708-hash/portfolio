@@ -38,38 +38,74 @@
             </section>
 
             <section class="mb-5">
+                <h3 class="section-title">Uitgelichte Projecten</h3>
+
+                <div id="projectSlideshow" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#projectSlideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Project 1"></button>
+                        <button type="button" data-bs-target="#projectSlideshow" data-bs-slide-to="1" aria-label="Project 2"></button>
+                        <button type="button" data-bs-target="#projectSlideshow" data-bs-slide-to="2" aria-label="Project 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <a href="project1.html" class="slideshow-link">
+                                <img src="assets/cisco.png" class="d-block w-100 slideshow-img" alt="Cisco Packet Tracer">
+                            </a>
+
+                            <div class="carousel-caption slideshow-caption">
+                                <h4>Cisco Packet Tracer</h4>
+                                <p>Gestructureerd netwerk voor Webwiz met bekabelingsplan, rack layout en patchplan.</p>
+                                <a href="project1.html" class="btn btn-pink">Bekijk project</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="project2.html" class="slideshow-link">
+                                <img src="assets/app.png" class="d-block w-100 slideshow-img" alt="App Creatie en Pitchen">
+                            </a>
+
+                            <div class="carousel-caption slideshow-caption">
+                                <h4>App Creatie en Pitchen</h4>
+                                <p>Een IT-oplossing bedenken, uitwerken en presenteren met doelgroep en verdienmodel.</p>
+                                <a href="project2.html" class="btn btn-pink">Bekijk project</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="project3.html" class="slideshow-link">
+                                <img src="assets/security.jpg" class="d-block w-100 slideshow-img" alt="Network Security Setup">
+                            </a>
+
+                            <div class="carousel-caption slideshow-caption">
+                                <h4>Network Security Setup</h4>
+                                <p>Firewall, VPN en beveiliging voor veilige toegang tot een netwerk.</p>
+                                <a href="project3.html" class="btn btn-pink">Bekijk project</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectSlideshow" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Vorige</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectSlideshow" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Volgende</span>
+                    </button>
+
+                </div>
+            </section>
+
+            <section class="mb-5">
                 <h3 class="section-title">Over mij</h3>
                 <p>
                     Ik ben een student Systeem en Netwerkbeheer met een oog naar meer IT kennis en vaardigheden.
                 </p>
-            </section>
-
-            <section>
-                <h3 class="section-title">Uitgelichte Projecten</h3>
-
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="card custom-card">
-                            <img src="assets/cisco.png" alt="Bedrijfsnetwerk">
-                            <div class="card-body">
-                                <h5>Cisco Packet Tracer</h5>
-                                <p>In dit project werd een gestructureerd netwerk voor Webwiz ontworpen met correcte bekabeling, racks en switchen. Daarnaast werden een bekabelingsplan, rack layout en patchplan uitgewerkt.</p>
-                                <a href="project1.html" class="btn btn-pink">Bekijk</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card custom-card">
-                            <img src="assets/app.png" alt="Linux server">
-                            <div class="card-body">
-                                <h5>App Creatie en Pitchen</h5>
-                                <p>Oplossen van een probleem aan de hand van IT en dit pitchen met een duidelijk verdienmodel en doelgroep.</p>
-                                <a href="project2.html" class="btn btn-pink">Bekijk</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </section>
 
         </div>
@@ -81,12 +117,20 @@
                     <li>HTML5</li>
                     <li>CSS / Bootstrap</li>
                     <li>JavaScript</li>
+                    <li>Netwerken</li>
+                    <li>Projectmatig werken</li>
                 </ul>
             </div>
 
             <div class="sidebar-box">
                 <h4>Contact</h4>
                 <p>Email: s169458@ap.be</p>
+            </div>
+
+            <div class="sidebar-box">
+                <h4>Portfolio</h4>
+                <p>Bekijk mijn projecten en ontdek wat ik al gemaakt heb.</p>
+                <a href="portfolio.html" class="btn btn-pink">Alle projecten</a>
             </div>
         </aside>
 
@@ -99,5 +143,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
